@@ -1,0 +1,54 @@
+header {
+    background-color: brown;
+    color: white;
+    
+    padding: 1rem;
+  }
+  
+  .pantalla {
+    display: flex;
+    justify-content: center;
+    
+    padding: 1rem;
+    background-color: blue;
+   
+    
+  }
+  
+  .bloque {
+    flex: 1;
+    min-height: 300px;/* establece la altura mínima que debe tener un elemento. por si pregunta (^-^) */
+    background-color: yellow;
+    
+   padding: 2rem;
+    border-radius: 50%;
+  }
+  
+  /* Pantallas HD hasta 1366px */
+  @media screen and (max-width: 1366px) {
+    .pantalla {
+      background-color: rgb(78, 139, 36);
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+  }    
+  
+  /* Tablets hasta 1024px */
+  @media screen and (max-width: 1024px) {
+    .pantalla {
+      background-color:rebeccapurple;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+}
+  /* Teléfonos hasta 767px */
+  @media screen and (max-width: 767px) {
+    .pantalla {
+      background-color: rgb(0, 255, 255);
+    }
+}
+.texto {
+  color: white;
+}
